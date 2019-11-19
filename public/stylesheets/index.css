@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("cell.jpg");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+    padding-top: 40px;
+    border: 1px solid;
+    border-bottom: 0px;
+    margin-top: 150px;
+    margin-left: 120px;
+    width: 80%;
+    position: relative;
+    border-radius: 4px 4px 0px 0px;
+    background-color: white;
+    padding: 20px 0 30px 0;
+}
+
+/* style inputs and link buttons */
+input,
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: 0.5px solid;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+    opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+    background-color: #3B5998;
+    color: white;
+
+}
+
+.twitter {
+    background-color: #55ACEE;
+    color: white;
+}
+
+.google {
+    background-color: #DD4B39;
+    color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* vertical line */
+.vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+    display: none;
+}
+
+/* bottom container */
+.bottom-container {
+    border:1px solid;
+    margin-left: 120px;
+    text-align: center;
+    width: 80%;
+    border-top: 0px;
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+    .col {
+        width: 100%;
+        margin-top: 0;
+        color: black;
+    }
+    /* hide the vertical line */
+    .vl {
+        display: none;
+    }
+    /* show the hidden text on small screens */
+    .hide-md-lg {
+        display: block;
+        text-align: center;
+    }
+}
+.signUp{
+    margin-left: 40px;
+    width: 300px;
+    border:0px;
+    background-color:#0077B5;
+}
+.forgot{
+    margin-right: 40px;
+    width: 300px;
+    border:0px;
+    font:blue;
+    background-color: #0077B5;
+}
+.check{
+    margin-right: 90px;
+}
+.log{
+    margin-left: 470px;
+}
